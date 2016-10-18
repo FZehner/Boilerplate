@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
   <title>Awesome Boilerplate</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   <link href="http://fonts.googleapis.com/css?family=Droid+Sans+Mono" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="design/index.css">
+  <meta charset="utf-8"/>
 </head>
 
 <body>
@@ -12,18 +13,34 @@
 		<div>
 			<h1><span>Awesome</span> Boilerplate</h1>
 			<p>
-				<label>Jump To Content</label><br>
-				<label>Jump To Footer</label><br>
-				<label>Jump To Kitties</label>
+				<label><a href="#content">Jump To Content</a></label><br/>
+				<label><a href="#footer">Jump To Footer</a></label><br/>
+				<label><a href="https://de.wikipedia.org/wiki/Katzen">Jump To Kitties</a></label>
 			</p>
 		</div>
 	</header>
 	<main>
+	
 		<section>
+		<a name="content">
 			<article>
+			
 			<!--ToDo Input Fields-->	
-			Input fields belongs here :)
-
+			<!--Input fields belongs here :)-->
+			
+			<form>
+				Vorname: <input type="text" name="firstname"> <br/>
+				Nachname: <input type="text" name="lastname"> <br/>
+				E-Mail: <input type="text" name="mailaddress"> <br/>
+				Telefonnummer: <input type="text" name="phonenumber"> <br/>
+				Geburtsdatum: <input type="text" name="bday"> <br/>
+				<select name="Items">
+				  <option value="uib">UIB</option>
+				  <option value="ib">IB</option>
+				  <option value="imb">IMB</option>
+				</select><br/>
+				<input type="submit" value="Senden">
+			
 			</article>
 
 		</section>
@@ -70,7 +87,8 @@
 		</section>
 	</main>
 	<footer>
-		<img src="img/nodschool.svg"></a>
+	<a name="footer">
+		<img src="./img/nodeschool.svg"/>
 	</footer>
 	<script src="design/index.js"></script>
 </body>
